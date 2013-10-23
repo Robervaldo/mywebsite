@@ -1,4 +1,7 @@
 Mywebsite::Application.routes.draw do
+  
+  resources :languages
+
   get "home/index"
 
   # The priority is based upon order of creation:

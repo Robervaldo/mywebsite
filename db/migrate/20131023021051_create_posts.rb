@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
       t.string :title, limit: 150, null: false
       t.text :content, null: false
-      t.string :slug, limit: 150, null: false
+      t.string :slug, null: false
       t.boolean :status, default: 1
       t.string :tags, limit:50, null: false
 

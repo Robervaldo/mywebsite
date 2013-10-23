@@ -8,7 +8,7 @@ class CreateCourses < ActiveRecord::Migration
       t.date :start_date, null: false
       t.date :end_date, null: true
       t.string :tags, limit: 50, null: false
-      t.string :slug, limit: 150, null: false
+      t.string :slug, null: false
 
       t.timestamps
     end

@@ -1,0 +1,21 @@
+<table>
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Description</th>
+			<th>Status</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @languages.each do |language| %>
+			<tr>
+				<td><%= language.id %></td>
+				<td><%= language.description %></td>
+				<td><%= language.status %></td>
+				<td></td>
+			</tr>
+		<% end %>
+	</tbody>
+	
+</table>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131023030915) do
+ActiveRecord::Schema.define(:version => 20131023213758) do
 
   create_table "comments", :force => true do |t|
     t.string   "author",       :limit => 150,                    :null => false
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(:version => 20131023030915) do
     t.date     "start_date",                                   :null => false
     t.date     "end_date"
     t.string   "tags",        :limit => 50,                    :null => false
-    t.string   "slug",        :limit => 150,                   :null => false
+    t.string   "slug",                                         :null => false
     t.datetime "created_at",                                   :null => false
     t.datetime "updated_at",                                   :null => false
   end
@@ -49,6 +49,22 @@ ActiveRecord::Schema.define(:version => 20131023030915) do
   add_index "courses", ["language_id"], :name => "index_courses_on_language_id"
   add_index "courses", ["slug"], :name => "index_courses_on_slug", :unique => true
   add_index "courses", ["title"], :name => "index_courses_on_title", :unique => true
+
+  create_table "courses_posts", :id => false, :force => true do |t|
+    t.integer "course_id"
+    t.integer "post_id"
+  end
+
+  create_table "friendly_id_slugs", :force => true do |t|
+    t.string   "slug",                         :null => false
+    t.integer  "sluggable_id",                 :null => false
+    t.string   "sluggable_type", :limit => 40
+    t.datetime "created_at"
+  end
+
+  add_index "friendly_id_slugs", ["slug", "sluggable_type"], :name => "index_friendly_id_slugs_on_slug_and_sluggable_type", :unique => true
+  add_index "friendly_id_slugs", ["sluggable_id"], :name => "index_friendly_id_slugs_on_sluggable_id"
+  add_index "friendly_id_slugs", ["sluggable_type"], :name => "index_friendly_id_slugs_on_sluggable_type"
 
   create_table "languages", :force => true do |t|
     t.string   "description", :limit => 100,                   :null => false
@@ -60,7 +76,7 @@ ActiveRecord::Schema.define(:version => 20131023030915) do
   create_table "posts", :force => true do |t|
     t.string   "title",      :limit => 150,                   :null => false
     t.text     "content",                                     :null => false
-    t.string   "slug",       :limit => 150,                   :null => false
+    t.string   "slug",                                        :null => false
     t.boolean  "status",                    :default => true
     t.string   "tags",       :limit => 50,                    :null => false
     t.datetime "created_at",                                  :null => false
