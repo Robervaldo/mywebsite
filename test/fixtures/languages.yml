@@ -2,8 +2,8 @@
 
 one:
   description: MyString
-  state: false
+  status: false
 
 two:
   description: MyString
-  state: false
+  status: false

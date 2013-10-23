@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  author: MyString
+  author_email: MyString
+  content: MyString
+  approved: false
+  parent: 1
+
+two:
+  author: MyString
+  author_email: MyString
+  content: MyString
+  approved: false
+  parent: 1

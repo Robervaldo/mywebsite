@@ -3,17 +3,19 @@
 one:
   title: MyString
   description: MyString
+  language: 
+  status: false
   start_date: 2013-10-22
   end_date: 2013-10-22
-  languages: 
-  state: false
   tags: MyString
+  slug: MyString
 
 two:
   title: MyString
   description: MyString
+  language: 
+  status: false
   start_date: 2013-10-22
   end_date: 2013-10-22
-  languages: 
-  state: false
   tags: MyString
+  slug: MyString
