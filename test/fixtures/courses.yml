@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyString
+  start_date: 2013-10-22
+  end_date: 2013-10-22
+  languages: 
+  state: false
+  tags: MyString
+
+two:
+  title: MyString
+  description: MyString
+  start_date: 2013-10-22
+  end_date: 2013-10-22
+  languages: 
+  state: false
+  tags: MyString
