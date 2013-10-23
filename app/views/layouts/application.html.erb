@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mywebsite</title>
+
+  	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+	<!-- Theme CSS -->
+	<link href="<%=asset_path "theme.css"%>" rel="stylesheet">
+
+	<link href='http://fonts.googleapis.com/css?family=Concert+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<header>
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="navbar-header">
+							<h3><a href="#" class="brand">Rudolfo Borges</a></h3>
+						</div><!-- fim logo -->
+					</div><!-- fim col-md-3 -->
+					<div class="col-md-9 col-md-pull-0">
+						<nav>
+							<div class="collapse navbar-collapse navbar-ex1-collapse">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="#">Home</a></li>
+									<li><a href="#">Posts</a></li>
+									<li><a href="#">Cursos</a></li>
+									<li><a href="#">Sobre</a></li>
+									<li><a href="#">Contato</a></li>
+								</ul>
+							</div><!-- fim menu -->
+						</nav>
+					</div><!-- fim col-md-5-->	
+				</div><!-- fim navbar -->
+			</div>
+		</div>
+	</header>
+
+	<%= yield %>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

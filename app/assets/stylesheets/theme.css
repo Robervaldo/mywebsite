@@ -1,0 +1,108 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: #FFF;
+	color: #777;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0;
+}
+
+/* header */
+header div.navbar {
+	border-top: 5px solid #16a085;
+	background: #ecf0f1;
+	background: -moz-linear-gradient(top,  #ecf0f1 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top,  #ecf0f1 0%,#ffffff 100%);
+	background: -o-linear-gradient(top,  #ecf0f1 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top,  #ecf0f1 0%,#ffffff 100%);
+	background: linear-gradient(to bottom,  #ecf0f1 0%,#ffffff 100%);
+	min-height: 70px;
+}
+
+header a.brand {
+	font-family: 'Graduate', cursive;
+	color: #7F8C8D;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+header a.brand:hover{
+	color: #4eb27d;
+}
+
+header div.navbar div.container{
+	
+}
+
+/* logo */
+
+
+/* navigation */
+header nav ul li a {
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	color: #16a085;
+}
+
+header nav ul li > a {
+	color: #16a085;
+}
+
+header nav ul li a:hover {
+	background-color: #F4F4F4;
+	color: #16a085;
+}
+
+header nav ul li.active > a {
+	color: #FFF;
+	background-color: #16a085 !important;
+}
+
+header nav ul li > a {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Social Icons */
+header #social i {
+	/*color: #4eb25c;*/
+}
+
+
+/* Home */
+div.hero {
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+	background-color: #16A085 !important;
+	min-height: 380px;
+	width: 100%;
+}
+
+div.hero div.aboutme {
+	background-image: url("/assets/aboutme-bg.png");
+	min-height: 80px;
+	color: #fff;
+	margin-top: 300px;
+	padding-top: 25px;
+	text-align: center;
+
+}
+
+
