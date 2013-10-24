@@ -1,5 +1,6 @@
 class LanguagesController < ApplicationController
 
+  layout "administration"
   respond_to :html
 
   def index
